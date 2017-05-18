@@ -6,17 +6,22 @@
 	
 </head>
 <header>
-	<p>Misogynist Mike</p>
+	<h1>Misogynist Mike</h1>
 	<span>Health:<span id="health">100</span></span>
 	<span>Hits:<span id="hits">0</span></span>
 </header>
 <body>
 	<img src="http://jmcolberg.com/weblog/archives/Ruff_Portrait.jpg" alt="" width 200px>
+	<script src="gameService.js"></script>
+	<script src="gameController.js"></script>
 	<script src="game.js"></script>
 </body>
 <footer>
-	<button type="button" onclick="slap()">Slap</button>
-	<button type="button" onclick="punch()">Punch</button>
-	<button type="button" onclick="kick()">Row Sham Bow</button>
+	<button type="button" onclick="app.ctrl.slap()">Slap</button>
+	<button type="button" onclick="app.ctrl.punch()">Punch</button>
+	<button type="button" onclick="app.ctrl.kick()">Row Sham Bow</button>
+	<button type="button" onclick="app.ctrl.equip('knuckles')">Brass Knuckles</button>
+	<button type="button" onclick="app.ctrl.equip('dagger')">Dagger</button>
+	<button type="button" onclick="app.ctrl.equip('banana')">Banana</button>
 </footer>
 </html>
